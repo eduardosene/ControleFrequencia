@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<meta charset="UTF-8"/>
+		<title>Controle de Frequência</title>
+		<link rel="stylesheet" type="text/css" href="../_css/estilo.css"/>
+		<link rel="stylesheet" type="text/css" href="../_css/telaInicial.css"/>
+		<link rel="stylesheet" type="text/css" href="../_css/crud.css"/>
+</head>
+<body>
+<div class="interface">
+	<header class="cabecalho">
+		<h1>Editar da Turma</h1>
+		<img class="logoUdf" src="../_imagens/logo-UDF.png"/>
+	</header>
+	<section class="corpo">
+		<form class="formCrudSelecioneEditar">
+			<div >
+				<label for="cSelecioneTurma">Selecione a turma</label>
+				<input type="text" name="tSelecioneTurma" id="cSelecioneTurma" size="40" maxlength="40" placeholder="Selecione a turma" list="listaTurma" />
+				<datalist id="listaTurma">
+					<option value="Turma 01"></option>
+					<option value="Turma 02"></option>
+					<option value="Turma 03"></option>
+				</datalist>
+			</div>
+		</form>
+
+		<form class="formCrud" >
+			<div>
+				<label for="cNomeCurso">Nome do Curso</label> 
+				<input type="text" name="tNomeCurso" id="cNomeCurso" size="40" maxlength="80" placeholder="Nome do Curso"/>
+			</div>
+			<div>
+			<label for="cCodigoOferta">Código da oferta</label>
+			<input type="text" name="tCodigoOferta" id="cCodigoOferta" size="40" maxlength="10" placeholder="Código da Oferta"/>
+			</div>
+			<div>
+			<label for="cCodigoTurma">Código da turma</label>
+			<input type="text" name="tCodigoTurma" id="cCodigoTurma" size="40" maxlength="10" placeholder="Código da Turma"/>
+			</div>
+			<div>
+			<label for="cSala">Sala</label>
+			<input type="text" name="tSala" id="cSala" size="40" maxlength="10" placeholder="Sala"/>
+			</div>
+			<div>
+			<label for="cCarga">Carga horária</label>
+			<input type="text" name="tCarga" id="cCarga" size="40" maxlength="10" placeholder="Carga horária"/>
+			</div>
+			<div>
+			<label for="cCredito">Crédito</label>
+			<input type="text" name="tCredito" id="cCredito" size="40" maxlength="10" placeholder="Crédito"/>
+			</div>
+			<div >
+				<label for="cSelecionePeriodo">Selecione o período</label>
+				<input type="text" name="tSelecionePeriodo" id="cSelecionePeriodo" size="40" maxlength="40" placeholder="Selecione o Período" list="listaPeriodo" />
+				<datalist id="listaPeriodo">
+					<option value="Matutino"></option>
+					<option value="Vespertino"></option>
+					<option value="Nortuno"></option>
+				</datalist>
+			</div>
+			<div>
+			<label for="cNomeDisciplina">Nome da disciplina</label>
+			<input type="text" name="tNomeDisciplina" id="cNomeDisciplina" size="40" maxlength="10" placeholder="Nome da disciplina"/>
+			</div>
+			<div>
+			<label for="cNomeProfessor">Nome do Professor</label>
+			<input type="text" name="tNomeProfessor" id="cNomeProfessor" size="40" maxlength="10" placeholder="Nome do professor"/>
+			</div>
+
+			<div class="divBtn">
+			<button class="btn" type="button">Salvar</button>
+			<button class="btnCancelar" type="button">Cancelar</button>
+			</div>
+
+		</form>
+	</section>
+	<footer class="rodapeLogin">
+		<p>
+			Grupo IV - Nortuno<br/>
+			Curso de Análise e Desenvolvimento de Sistemas<br/>
+			Copyright &copy; 2018 - Todos os direitos Reservados
+		</p>
+	</footer>
+</div>
+</body>
+</html>

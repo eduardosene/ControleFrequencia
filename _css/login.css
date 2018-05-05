@@ -1,0 +1,110 @@
+@charset"UTF-8";
+
+
+/* Cabecalho*/
+header#cabecalhoLogin h1 {
+	position: absolute;
+	top: 110px;
+	left: 530px;
+	font-family: 'Arial', sans-serif;
+	font-size: 18pt;
+	font-weight: 800;
+	color: #105fae; 
+}
+header#cabecalhoLogin img#logoUdf {
+	position: absolute;
+	width: 150px;
+	left: 600px;
+	top: 20px;
+}
+header#cabecalhoLogin div#ce {
+	position: relative;
+	background-color: #3398cc;
+ 	width: 120px;
+ 	height: 200px;
+	float: left;
+	margin-left:200px;
+	margin-top: -20px;
+}
+
+header#cabecalhoLogin div#cd {
+	position: relative;
+	background-color: #3398cc;
+ 	width: 120px;
+ 	height: 200px;
+	float: right;
+	margin-right:200px;
+	margin-top: -20px;
+}
+
+/*corpo*/
+
+section#corpoLogin{
+
+	top: 175px;
+	position: relative;
+	width: 704px;
+	left: 320px;
+	border-top: 5px solid #0e60ac;
+	border-bottom: 5px solid #0e60ac;
+
+}
+
+section#corpoLogin table#tableLogin{
+	font-family: 'Arial', 'sans-serif';
+	color: #999999;
+	text-align: center;
+	position: relative;
+	padding: 120px 0px 120px 0px;
+	left: -90px;
+}
+
+input.input {
+	background-color: #f0f0f0;
+	border: 2px solid #9a9a9a;
+    padding: 5px;
+    border-radius: 6px;
+}
+table#tableLogin td#button {
+	text-align: right;
+}
+table#tableLogin button#button{
+	font-family: 'Arial', 'sans-serif';
+	color: #999999;
+	background-color: #f0f0f0;
+	border: 2px solid #9a9a9a;
+    padding: 4px 25px 4px 25px;
+    border-radius: 6px;
+}
+section#linkLogin {
+	top: 230px;
+	position: absolute;
+}
+section#linkLogin a{
+	font-size: 10pt;
+	color: #999999;
+}
+
+section#linkLogin a#linkSuporte{
+	position: relative;
+	margin-left: 130px;
+}
+section#linkLogin a#linkSenha{
+	position: relative;
+	margin-left: 220px;
+}
+
+/*Rodape*/
+footer#rodapeLogin{
+	position: relative;
+	bottom: -180px;
+}
+
+footer#rodapeLogin p {
+	text-align: center;
+	font-family: 'Arial', 'sans-serif';
+	color: #999999;
+
+}
+
+

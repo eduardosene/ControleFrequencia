@@ -1,0 +1,53 @@
+@charset"UTF-8";
+body {
+	font-family: Arial,sans-serif;
+}
+
+/* Cabecalho*/
+header.cabecalho {
+	margin: -20px -8px 0px -5px;
+	height: 100px;
+	border-bottom: 5px solid #08488f;
+}
+header.cabecalho h1 {
+	position: relative;
+	top: 30px;
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	font-size: 20pt;
+	font-weight: 800;
+	color: #0e60ac;
+}
+header.cabecalho img.logoUdf {
+	position: absolute;
+	width: 140px;
+	top: 15px;
+	left: 15px;
+}
+
+/*Conteúdo*/
+
+section.corpo {
+
+	margin: 20px auto 50px auto;
+	padding: 40px;
+    width: 550px;
+    min-height: 400px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+ 	border-radius:  6px;
+}
+
+section.corpoProfessor {
+
+	min-height:300px;
+}
+
+/*Rodape*/
+
+footer.rodapeLogin p {
+	text-align: center;
+	font-family: 'Arial', 'sans-serif';
+	color: #999999;
+
+}
+

@@ -1,0 +1,147 @@
+@charset"UTF-8";
+
+/*Tabela Consultar */
+section.corpo {
+}
+section.corpo img.iconePauta{
+	position: absolute;
+	width: 125px ;
+	left: 370px;
+	top: 160px;
+}
+
+form.form {
+	float: right;
+	width: 450px;
+}
+form.form .sectionTitulo {
+	float: right;
+	background-color: #0e60ac;
+	width: 450px;
+	border: 2px solid #444444;
+	border-radius: 6px;
+}
+form.form .sectionTitulo h1{
+	font-size: 10pt;
+	color: #fefefc;
+	text-align: center;
+	font-weight: 600;
+	margin: 3px;
+}
+form.form .cConsultar{
+	float: left;
+	width:  330px;
+	padding: 4px 8px;
+}
+form.form .btnConsultar {
+	background-color: #08488f;
+	border: solid #444444;
+	border-width: 0 2px 0px 2px;
+	padding: 6px 16px;
+	color: #fefefc;
+}
+form.form .btnConsultarRel {
+	background-color: #08488f;
+	border: solid #444444;
+	border-width: 0 2px 2px 2px;
+	padding: 5px 16px;
+	color: #fefefc;
+	position: relative;
+	top: -1px;
+}
+form.form .cConsultarAnoRel {
+	padding: 4px 4px
+}
+form.form .cConsultarMesRel {
+	padding: 4px 8px;
+	margin-left: -5px; 
+}
+form.form .cConsultarTurmaRel{
+	width: 143px;
+	padding: 4px 16px;
+	margin-left: -5px; 
+	margin-right:-5px;
+}
+/*Menu CRUD*/
+nav.menuProfessor {
+	float: left;
+	margin-top: 30px;
+	margin-left: 100px;
+	width: 260px;	
+	height: 120px;
+}
+nav.menuCoordenador {
+	float: left;
+	margin: 30px 5px -10px 10px;
+	width: 260px;	
+	height: 120px;
+}
+nav img.navIcone {
+	position: absolute;
+	width: 130px ;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+
+nav img.navIconeTurma {
+	position: absolute;
+	width: 120px ;
+	margin-left: -15px;
+	margin-top: -3px;
+}
+
+nav .navTitulo{
+	float: right;
+	background-color: #0e60ac;
+	width: 150px;
+	height: 25px;
+	border: 2px solid #444444;
+	border-radius: 6px;
+}
+nav h1 {
+	text-align: center;	
+	font-size: 13pt;;
+	margin-top: 3px;
+	color: #fefefc;
+}
+
+nav ul {
+	list-style: none;
+	float: left;
+	margin-top: -1px;
+	margin-left: 71px;
+}
+nav li {
+	font-size: 9pt;
+	background-color: #f0f0f0;
+	padding: 6px 4px; 
+	width: 135px;
+	color: #323232;
+	border: 1px solid #444444;
+}
+nav a {
+	color:#333333;
+	text-decoration: none;
+}
+
+div.divBtnSairProfessor a.btnSair {
+	position: relative;
+	top: 290px;
+	left: 450px;
+	
+}
+div.divBtnSairCoordenador a.btnSair {
+	position: relative;
+	top: 400px;
+	left: 450px;
+	
+}
+a.btnSair {
+	border: 2px solid #444444;
+	border-radius: 6px;
+	background-color:#0e60ac;
+	color: #fefefc;
+	padding: 6px 30px;
+	text-decoration: none;
+	font-size: 14px;
+}
