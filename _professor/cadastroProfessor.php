@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../_css/telaInicial.css"/>
 		<link rel="stylesheet" type="text/css" href="../_css/crud.css"/>
 		<script type="text/javascript" src="../_js/validacaoForm.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <div class="interface">
@@ -41,7 +42,8 @@
 				<input required type="password" name="tRedigitarProfessor" id="cRedigitarSenhaProfessor" size="40" maxlength="40" placeholder="Senha" />
 			</div>
 
-			<div class="g-recaptcha" data-sitekey="6LeCLEYUAAAAADeDM7gWU5YFc_xMgD7hMrzba0Nt"></div>
+			<div class="g-recaptcha" data-sitekey="6Lf2HlgUAAAAACFkaTTuWnAZ2NPtBDTsD6ybRHvd"></div>
+
 
 			<div class="divBtn">
 			<button class="btn" type="submit">Criar Conta</button>
@@ -58,7 +60,5 @@
 		</p>
 	</footer>
 </div>
- <!--js-->
-    <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
 </body>
 </html>

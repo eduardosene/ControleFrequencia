@@ -8,11 +8,11 @@
 	$senhaProfessor=$_POST['tSenhaProfessor'];
 	$redigitarProfessor=$_POST['tRedigitarProfessor'];
 
-	//Validação 
-			$val=true;
+	//Validação nome do usuário
+			$val=true; 
 			$consulta = mysqli_query($conexao,"SELECT * FROM professor WHERE usuarioProfessor='$usuarioProfessor'");
-			$linha = mysqli_num_rows($consulta);
-			if($linha >= 1){
+			$row = mysqli_num_rows($consulta);
+			if($row >= 1){
 				do{
 					$val = false;
 				echo '<script type="text/javascript">
