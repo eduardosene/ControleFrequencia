@@ -1,11 +1,11 @@
 
  function validarSenha(){
+
         NovaSenha = document.cadastroProfessor.tSenhaProfessor.value;
         CNovaSenha = document.cadastroProfessor.tRedigitarProfessor.value;
         if (NovaSenha != CNovaSenha){ 
-             alert("SENHAS DIFERENTES! \nFAVOR DIGITAR SENHAS IGUAIS");
+             alert("SENHAS INCORRETAS! \nFAVOR DIGITAR SENHAS IGUAIS");
              return false;
         }
         return true;
  }
- 

@@ -10,9 +10,12 @@
 
 	//Validação nome do usuário
 			$val=true; 
-			$consulta = mysqli_query($conexao,"SELECT * FROM professor WHERE usuarioProfessor='$usuarioProfessor'");
-			$row = mysqli_num_rows($consulta);
-			if($row >= 1){
+			$consultaP = mysqli_query($conexao,"SELECT * FROM professor WHERE usuarioProfessor='$usuarioProfessor'");
+			$rowP = mysqli_num_rows($consultaP);
+
+			$consultaC = mysqli_query($conexao,"SELECT * FROM coordenador WHERE usuarioCoordenador='$usuarioProfessor'");
+			$rowC = mysqli_num_rows($consultaC);
+			if($rowP >= 1 || $rowC >= 1 ){
 				do{
 					$val = false;
 				echo '<script type="text/javascript">

@@ -16,7 +16,7 @@
 		<img class="logoUdf" src="../_imagens/logo-UDF.png"/>
 	</header>
 	<section class="corpo">
-		<form class="formCrud" name="cadastroProfessor" method="post" action="adicionaProfessor.php?cadastradoSucesso" onSubmit="return validarSenha();">
+		<form class="formCrud" name="cadastroProfessor" method="post" action="adicionaProfessor.php?cadastradoSucesso" onSubmit="return validarSenha()">
 			<div>
 				<label for="cNomeProfessor">Nome completo*</label> 
 				<input required type="text" name="tNomeProfessor" id="cNomeProfessor" size="40" maxlength="80" placeholder="Nome Completo" />
