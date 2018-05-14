@@ -1,7 +1,7 @@
 <?php
 	require_once('../conecta.php'); 
 
-	$Coordenacao=$_POST['tCoordenacao'];
+	$coordenacao=$_POST['tCoordenacao'];
 	$nomeCoordenador=$_POST['tNomeCoordenador'];
 	$usuarioCoordenador=$_POST['tUsuarioCoordenador'];
 	$matriculaCoordenador=$_POST['tMatriculaCoordenador'];
@@ -25,7 +25,7 @@
 				   } while ($val == true);
 			}
 	//Inclute no banco
-	mysqli_query($conexao,"INSERT INTO coordenador (coordenacao, nomeCoordenador, usuarioCoordenador, matriculaCoordenador, emailCoordenador, senhaCoordenador, redigitarCoordenador) VALUES ('$Coordenacao', '$nomeCoordenador', '$usuarioCoordenador', '$matriculaCoordenador', '$emailCoordenador', '$senhaCoordenador', '$redigitarCoordenador' )");
+	mysqli_query($conexao,"INSERT INTO coordenador (coordenacao, nomeCoordenador, usuarioCoordenador, matriculaCoordenador, emailCoordenador, senhaCoordenador, redigitarCoordenador) VALUES ('$coordenacao', '$nomeCoordenador', '$usuarioCoordenador', '$matriculaCoordenador', '$emailCoordenador', '$senhaCoordenador', '$redigitarCoordenador' )");
 
 	mysqli_close($conexao);
 

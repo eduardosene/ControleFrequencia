@@ -6,6 +6,9 @@
 		<link rel="stylesheet" type="text/css" href="../_css/estilo.css"/>
 		<link rel="stylesheet" type="text/css" href="../_css/telaInicial.css"/>
 		<link rel="stylesheet" type="text/css" href="../_css/crud.css"/>
+		<script type="text/javascript" src="../_js/validacaoForm.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<?php include ("../conecta.php"); ?>
 </head>
 <body>
 <div class="interface">
@@ -14,24 +17,23 @@
 		<img class="logoUdf" src="../_imagens/logo-UDF.png"/>
 	</header>
 	<section class="corpo">
-		<form class="formCrudSelecioneExcluir">
+		<form class="formCrudSelecioneExcluir" method="POST" action="deletarProfessor.php?deletarSucesso">
 			<div >
 				<label for="cSelecioneProfessor">Selecione o Professor*</label>
 				<input type="text" name="tSelecioneProfessor" id="cSelecioneProfessor" size="40" maxlength="40" placeholder="Selecione o Professor" list="listaProfessor" />
 				<datalist id="listaProfessor">
-					<option value="Professor 01"></option>
-					<option value="Professor 02"></option>
-					<option value="Professor 03"></option>
-				</datalist>
-			</div>
-		</form>
+				<?php 
+				 $consulta=mysqli_query($conexao,"SELECT*FROM professor order by nomeProfessor ASC");
+				 while ($dados = mysqli_fetch_array($consulta)) {echo("<option value='".$dados['nomeProfessor']."'>".$dados['nomeProfessor']."</option>");}?> </datalist>
+
 				<div class="captchaExcluir">
-			<div class="g-recaptcha" data-sitekey="6LeCLEYUAAAAADeDM7gWU5YFc_xMgD7hMrzba0Nt"></div>
+				<div class="g-recaptcha" data-sitekey="6Lf2HlgUAAAAACFkaTTuWnAZ2NPtBDTsD6ybRHvd"></div>
 		</div>
 		<div class="divBtnExcluir">
-			<button class="btn" type="button">Salvar</button>
+			<button class="btn" type="submit">Salvar</button>
 			<button class="btnCancelar" type="button">Cancelar</button>
 		</div>
+			</form>
 	</section>
 	<footer class="rodapeLogin">
 		<p>
