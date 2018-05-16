@@ -18,7 +18,11 @@
         return true;
  }
 		</script>
-		<?php include ("../conecta.php"); ?>
+		<?php 
+		require_once ("../conecta.php"); 
+		require_once ('../function.php'); 
+		verificaUsuario();
+		?>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
@@ -31,7 +35,7 @@
 		<form class="formCrudSelecioneExcluir" method="post" action="deletarCoordenador.php?deletarSucesso">
 			<div >
 				<label for="cSelecioneCoordenador">Selecione o Coordenador*</label>
-				<input type="text" name="tSelecioneCoordenador" id="cSelecioneCoordenador" size="40" maxlength="40" placeholder="Selecione o Coordenador" list="listaCoordenador" />
+				<input required type="text" name="tSelecioneCoordenador" id="cSelecioneCoordenador" size="40" maxlength="40" placeholder="Selecione o Coordenador" list="listaCoordenador" />
 				<datalist id="listaCoordenador">
 				<?php 
 				 $consulta=mysqli_query($conexao,"SELECT * FROM coordenador order by nomeCoordenador ASC");
@@ -43,8 +47,8 @@
 				<div class="g-recaptcha" data-sitekey="6Lf2HlgUAAAAACFkaTTuWnAZ2NPtBDTsD6ybRHvd"></div>
 			</div>
 		<div class="divBtnExcluir">
-			<button class="btn" type="sumbit">Salvar</button>
-			<button class="btnCancelar" type="button">Cancelar</button>
+			<button class="btn" type="sumbit">Excluir</button>
+			<button class="btnCancelar"><a href="../telaCoordenador.php">Cancelar</a></button> 
 		</div>
 		</form>
 	</section>

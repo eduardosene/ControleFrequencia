@@ -10,7 +10,7 @@
 
 		
 	//Inclute no banco
-	mysqli_query($conexao,"UPDATE coordenador SET coordenacao='$coordenacao', nomeCoordenador='$nomeCoordenador', matriculaCoordenador='$matriculaCoordenador', emailCoordenador='$emailCoordenador', senhaCoordenador='$senhaCoordenador', redigitarCoordenador='$redigitarCoordenador'");
+	mysqli_query($conexao,"UPDATE coordenador SET coordenacao='$coordenacao', nomeCoordenador='$nomeCoordenador', emailCoordenador='$emailCoordenador', senhaCoordenador='$senhaCoordenador', redigitarCoordenador='$redigitarCoordenador' WHERE matriculaCoordenador = '$matriculaCoordenador'");
 
 	mysqli_close($conexao);
 

@@ -1,7 +1,7 @@
 <?php
 	require_once('conecta.php'); 
 	require_once('function.php'); 
-	verificaUsuario();
+	verificaUsuarioTela();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -75,9 +75,9 @@
 				<h1>Turma</h1>
 			</div>
 			<ul>
-				<li><a href="#">Editar Turma </a></li>
-				<li><a href="#">Excluir Turma </a></li>
-				<li><a href="#">Cadastrar Turma </a></li>
+				<li><a href="_turma/editarTurma.php">Editar Turma </a></li>
+				<li><a href="_turma/excluirTurma.php">Excluir Turma </a></li>
+				<li><a href="_turma/cadastroTurma.php">Cadastrar Turma </a></li>
 			</ul>
 		</nav>
 		<nav class="menuCoordenador">
@@ -86,9 +86,9 @@
 				<h1>Aluno</h1>
 			</div>
 			<ul>
-				<li><a href="#">Editar Aluno </a></li>
-				<li><a href="#">Excluir Aluno </a></li>
-				<li><a href="#">Cadastrar Aluno </a></li>
+				<li><a href="_aluno/editarAluno.php">Editar Aluno </a></li>
+				<li><a href="_aluno/excluirAluno.php">Excluir Aluno </a></li>
+				<li><a href="_aluno/cadastroAluno.php">Cadastrar Aluno </a></li>
 			</ul>
 		</nav>
 		<nav class="menuCoordenador">
@@ -97,9 +97,9 @@
 				<h1>Professor</h1>
 			</div>
 			<ul>
-				<li><a href="#">Editar Professor </a></li>
-				<li><a href="#">Excluir Professor </a></li>
-				<li><a href="#">Cadastrar professor </a></li>
+				<li><a href="_professor/editarProfessor.php">Editar Professor </a></li>
+				<li><a href="_professor/excluirProfessor.php">Excluir Professor </a></li>
+				<li><a href="_professor/cadastroProfessor.php">Cadastrar professor </a></li>
 			</ul>
 		</nav>
 		<nav class="menuCoordenador">
@@ -108,9 +108,9 @@
 				<h1>Coordenação</h1>
 			</div>
 			<ul>
-				<li><a href="#">Editar Coordenação </a></li>
-				<li><a href="#">Excluir Coordenação </a></li>
-				<li><a href="#">Cadastrar Coordenação</a></li>
+				<li><a href="_coordenador/editarCoordenador.php">Editar Coordenação </a></li>
+				<li><a href="_coordenador/excluirCoordenador.php">Excluir Coordenação </a></li>
+				<li><a href="_coordenador/cadastroCoordenador.php">Cadastrar Coordenação</a></li>
 			</ul>
 		</nav>
 		<div class="divBtnSairCoordenador">

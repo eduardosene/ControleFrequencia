@@ -18,7 +18,11 @@
         return true;
  }
 		</script>
-		<?php include ("../conecta.php"); ?>
+		<?php 
+		require_once ("../conecta.php"); 
+		require_once ('../function.php'); 
+		verificaUsuario();
+		?>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
@@ -84,8 +88,8 @@
 			<div class="g-recaptcha" data-sitekey="6Lf2HlgUAAAAACFkaTTuWnAZ2NPtBDTsD6ybRHvd"></div>
 
 			<div class="divBtn">
-			<button class="btn" type="submit">Criar Conta</button>
-			<button class="btnCancelar" type="button">Cancelar</button>
+			<button class="btn" type="submit">Alterar</button>
+			<button class="btnCancelar"><a href="../telaCoordenador.php">Cancelar</a></button>
 			</div>
 
 		</form>

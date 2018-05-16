@@ -6,6 +6,11 @@
 		<link rel="stylesheet" type="text/css" href="../_css/estilo.css"/>
 		<link rel="stylesheet" type="text/css" href="../_css/telaInicial.css"/>
 		<link rel="stylesheet" type="text/css" href="../_css/crud.css"/>
+		<?php 
+		require_once ("../conecta.php"); 
+		require_once ('../function.php'); 
+		verificaUsuario();
+		?>
 </head>
 <body>
 <div class="interface">
@@ -14,12 +19,6 @@
 		<img class="logoUdf" src="../_imagens/logo-UDF.png"/>
 	</header>
 	<section class="corpo">
-		<div class="formCrudImportar">
-				<label for="cSelecioneTurma">Importar arquivo CSV </label>
-				<input type="text" name="tSelecioneTurma" id="cSelecioneTurma" size="40" maxlength="40" placeholder="Importar arquivo" list="listaCoordenador" />
-				<button class="btn" type="button">Arquivo</button>
-				<p> OU </p>
-		</div>
 		<form class="formCrud" name="cadastroTurma" method="post" action="adicionaTurma.php?cadastradoSucesso">
 			<div>
 				<label for="cNomeCurso">Nome do Curso*</label> 
@@ -60,8 +59,8 @@
 			</div>
 
 			<div class="divBtn">
-			<button class="btn" type="submit">Criar Conta</button>
-			<button class="btnCancelar" type="button">Cancelar</button>
+			<button class="btn" type="submit">Cadastrar Turma</button>
+			<button class="btnCancelar"><a href="../telaCoordenador.php">Cancelar</a></button> 
 			</div>
 
 		</form>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-br">
 <head>
 		<meta charset="UTF-8"/>
@@ -8,7 +8,11 @@
 		<link rel="stylesheet" type="text/css" href="../_css/crud.css"/>
 		<script type="text/javascript" src="../_js/validacaoForm.js"></script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
-		<?php include ("../conecta.php"); ?>
+		<?php 
+		require_once ("../conecta.php"); 
+		require_once ('../function.php'); 
+		verificaUsuario();
+		?>
 		
 </head>
 <body>
@@ -72,7 +76,7 @@
 
 			<div class="divBtn">
 			<button class="btn" type="submit">Editar Conta</button>
-			<button class="btnCancelar" type="button">Cancelar</button>
+			<button class="btnCancelar"><a href="../telaCoordenador.php">Cancelar</a></button> 
 			</div>
 
 		</form>

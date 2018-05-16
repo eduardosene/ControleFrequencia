@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$banco = "controlefrequencia";
+$banco = "controlefrequenciabd";
 $conexao = mysqli_connect ($host, $user, $pass, $banco);
 if (mysqli_connect_errno())
   {

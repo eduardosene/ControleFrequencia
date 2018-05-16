@@ -1,7 +1,7 @@
 <?php
 	require_once('conecta.php'); 
 	require_once('function.php'); 
-	verificaUsuario();
+	verificaUsuarioTela();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -68,17 +68,6 @@
 				<button class="btnConsultarRel" type="button">Consultar</button>
 			</div>
 		</form>
-		<nav class="menuProfessor">
-			<img class="navIcone" src="_imagens\aluno.png"/>
-			<div class="navTitulo">
-				<h1>Aluno</h1>
-			</div>
-			<ul>
-				<li><a href="#">Editar Aluno </a></li>
-				<li><a href="#">Excluir Aluno </a></li>
-				<li><a href="#">Cadastrar Aluno </a></li>
-			</ul>
-		</nav>
 		<div class="divBtnSairProfessor">
 			<a href="userLogout.php" class="btnSair">Sair</a>
 		</div>

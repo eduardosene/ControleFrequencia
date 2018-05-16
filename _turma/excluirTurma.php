@@ -15,19 +15,12 @@
 <body>
 <div class="interface">
 	<header class="cabecalho">
-		<h1>Cadastro do Aluno(a)</h1>
+		<h1>Excluir da Turma</h1>
 		<img class="logoUdf" src="../_imagens/logo-UDF.png"/>
 	</header>
 	<section class="corpo">
-		<form class="formCrud" name="cadastroAluno" method="post" action="adicionaAluno.php?cadastradoSucesso" >
-			<div>
-				<label for="cNomeAluno">Nome completo*</label> 
-				<input required type="text" name="tNomeAluno" id="cNomeAluno" size="40" maxlength="40" placeholder="Nome Completo"/>
-			</div>
-			<div>
-			<label for="cMatriculaAluno">RGM*</label>
-			<input required type="text" name="tMatriculaAluno" id="cMatriculaAluno" size="8" maxlength="8" placeholder="RGM" pattern="[0-9]+$"/>
-			</div>
+
+		<form class="formCrudSelecioneExcluir" method="POST" action="deletarTurma.php?deletarSucesso">
 			<div >
 				<label for="cSelecioneTurma">Selecione turma*</label>
 				<input type="text" name="tSelecioneTurma" id="cSelecioneTurma" size="40" maxlength="40" placeholder="Selecione o turma" list="listaTurma" />
@@ -36,11 +29,14 @@
 				 $consulta=mysqli_query($conexao,"SELECT*FROM turma order by codigoTurma ASC");
 				 while ($dados = mysqli_fetch_array($consulta)) {echo("<option value='".$dados['codigoTurma']."'>".$dados['codigoTurma']."</option>");}?> </datalist>
 			</div>	
-			<div class="divBtn">
-			<button class="btn" type="submit">Cadastrar Aluno</button>
+				<div class="captchaExcluir">
+				<div class="g-recaptcha" data-sitekey="6Lf2HlgUAAAAACFkaTTuWnAZ2NPtBDTsD6ybRHvd"></div>
+				</div>
+		<div class="divBtnExcluir">
+			<button class="btn" type="submit">Excluir</button>
 			<button class="btnCancelar"><a href="../telaCoordenador.php">Cancelar</a></button> 
-			</div>
-		</form>
+		</div>
+	</form>
 	</section>
 	<footer class="rodapeLogin">
 		<p>
@@ -50,5 +46,7 @@
 		</p>
 	</footer>
 </div>
+ <!--js-->
+    <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
 </body>
 </html>

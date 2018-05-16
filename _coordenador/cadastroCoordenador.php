@@ -19,6 +19,11 @@
  }
 		</script>
 		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<?php 
+		require_once ("../conecta.php"); 
+		require_once ('../function.php'); 
+		verificaUsuario();
+		?>
 </head>
 <body>
 <div class="interface">
@@ -61,7 +66,7 @@
 
 			<div class="divBtn">
 			<button class="btn" type="submit">Criar Conta</button>
-			<button class="btnCancelar" type="button">Cancelar</button>
+			<button class="btnCancelar"><a href="../telaCoordenador.php">Cancelar</a></button> 
 			</div>
 
 		</form>

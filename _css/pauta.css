@@ -1,0 +1,6 @@
+create table aluno_has_turma {
+	id int not null auto_increment, 
+	matriculaAluno int, 
+	codigoTurma int,
+
+)default charset = utf8;
